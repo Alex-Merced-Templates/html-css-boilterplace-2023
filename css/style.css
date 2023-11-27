@@ -1,0 +1,53 @@
+@layer reset, base, components;
+
+@layer reset {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+@layer base {
+
+    :root {
+        --bg-color: gray;
+        --fg-color: blue;
+        --accent-color: orange;
+        --default-padding: 5px;
+        --default-margin: 5px;
+        --title-font: helvetica, san-serif;
+        --text-font: georgia, san-serif;
+    }
+
+    * {
+        font-family: var(--text-font)
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--title-font);
+    }
+
+
+
+}
+
+@layer components {
+
+    header {
+        margin: 0;
+
+        & h1 {
+            color: var(--fg-color)
+        }
+    }
+
+    main {
+        margin: 0;
+    }
+
+    footer {
+        margin: 0;
+    }
+}
